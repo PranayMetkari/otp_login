@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MyApp</div>
+
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('about')">About Us</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+    </ul>
+
+    <div class="profile" onclick="toggleProfile()">
+      <span id="username">Profile</span>
+      <div class="profile-dropdown" id="profileDropdown">
+        <a href="#">My Profile</a>
+        <a href="#" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <div id="home" class="section active">
+      <h2>Home</h2>
+      <p>Welcome to your dashboard 🎉</p>
+    </div>
+
+    <div id="about" class="section">
+      <h2>About Us</h2>
+      <p>We provide secure authentication using Email + OTP.</p>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Email: support@myapp.com</p>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

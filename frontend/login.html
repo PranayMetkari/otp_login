@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Login</h2>
+
+    <!-- LOGIN SECTION -->
+    <div id="loginSection">
+      <input type="email" id="email" placeholder="Enter Email">
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <button onclick="login()">Login</button>
+      <div class="loader" id="loginLoader">Verifying...</div>
+    </div>
+
+    <!-- OTP SECTION (hidden by default) -->
+    <div id="otpSection" class="hidden">
+      <input type="text" id="otp" placeholder="Enter OTP">
+      <button onclick="verifyOtp()">Verify OTP</button>
+      <div class="loader" id="otpLoader">Verifying OTP...</div>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

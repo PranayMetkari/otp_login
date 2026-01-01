@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Signup</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+    <button onclick="signup()">Signup</button>
+
+    <div class="loader" id="loader">Creating account...</div>
+    <div id="message"></div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
